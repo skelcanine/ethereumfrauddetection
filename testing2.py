@@ -57,10 +57,10 @@ f, ax = plt.subplots(1, 2, sharey=True, figsize=(16,9), constrained_layout=True)
 f.tight_layout()
 # plot the same data on both axes
 ax[0].set_xlim(0, 0.25)
-sns.barplot(x = 'variances',y='names', data=df, ax=ax[0], orient='h')
+sns.barplot(result = 'variances',y='names', data=df, ax=ax[0], orient='h')
 ax[1].set_xlim(1, 10000)
 
-sns.barplot(x = 'variances',y='names', data=df, ax=ax[1], orient='h')
+sns.barplot(result = 'variances',y='names', data=df, ax=ax[1], orient='h')
 
 
 

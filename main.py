@@ -104,9 +104,9 @@ exp_var_cumul = np.cumsum(pca.explained_variance_ratio_)
 
 """
 px.area(
-    x=range(1, exp_var_cumul.shape[0] + 1),
+    result=range(1, exp_var_cumul.shape[0] + 1),
     y=exp_var_cumul,
-    labels={"x": "# Components", "y": "Explained Variance"}
+    labels={"result": "# Components", "y": "Explained Variance"}
 ).show()
 """
 print(X_scaled.shape)
